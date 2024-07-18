@@ -1,18 +1,58 @@
-UIView3D is a software library for mobile devices that allows native mobile UI content to be used within a 3D engine, supporting interactivity and smooth scrolling. It is compatible with Virtual Reality (VR) and Augmented Reality (AR), including Google Daydream View and Samsung Gear VR.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIView3D Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2, h3 {
+            font-size: 20px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: disc;
+            margin: 10px 0 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>UIView3D</h1>
+    <p>UIView3D is a software library for mobile devices that allows native mobile UI content to be used within a 3D engine, supporting interactivity and smooth scrolling. It is compatible with Virtual Reality (VR) and Augmented Reality (AR), including Google Daydream View and Samsung Gear VR.</p>
 
-### Unity Plugin
-- **Android Example**: Demonstrates displaying a basic web browser within Unity using a 3D plane and UIView3D renderer.
-- **Creating UIView Android Providers**: Custom providers are created by extending the `UIView3DRenderer.AndroidViewProvider` class and overriding `GetNativeObject()` and `DispatchMotionEvent()`.
-  - `GetNativeObject()`: Returns a native handle to an Android View.
-  - `DispatchMotionEvent()`: Forwards Unity touch events to the Android View.
-- **Creating Input Drivers**: Custom input systems, such as for Google Daydream View Controller, forward touch inputs to Android Views using `DispatchMotionEvent`.
+    <h2>Unity Plugin</h2>
+    <ul>
+        <li><strong>Android Example</strong>: Demonstrates displaying a basic web browser within Unity using a 3D plane and UIView3D renderer.</li>
+        <li><strong>Creating UIView Android Providers</strong>: Custom providers are created by extending the <code>UIView3DRenderer.AndroidViewProvider</code> class and overriding <code>GetNativeObject()</code> and <code>DispatchMotionEvent()</code>.
+            <ul>
+                <li><code>GetNativeObject()</code>: Returns a native handle to an Android View.</li>
+                <li><code>DispatchMotionEvent()</code>: Forwards Unity touch events to the Android View.</li>
+            </ul>
+        </li>
+        <li><strong>Creating Input Drivers</strong>: Custom input systems, such as for Google Daydream View Controller, forward touch inputs to Android Views using <code>DispatchMotionEvent</code>.</li>
+    </ul>
 
-### Current Limitations
-- Hardware acceleration is not available in WebView, affecting video and WebGL content.
-- Android Views are drawn on a single thread, which may require adjusting rendering tiles and update rates.
-- Vulkan support is not available but may be implemented in the future.
+    <h2>Current Limitations</h2>
+    <ul>
+        <li>Hardware acceleration is not available in WebView, affecting video and WebGL content.</li>
+        <li>Android Views are drawn on a single thread, which may require adjusting rendering tiles and update rates.</li>
+        <li>Vulkan support is not available but may be implemented in the future.</li>
+    </ul>
 
-### Contact and License
-- Website: [altimit.systems/uiview3d](https://altimit.systems/uiview3d)
-- Email: unity@altimit.systems
-- Licensed under the MIT License, allowing free use and distribution with attribution.
+    <h2>Contact and License</h2>
+    <ul>
+        <li>Website: <a href="https://altimit.systems/uiview3d">altimit.systems/uiview3d</a></li>
+        <li>Email: <a href="mailto:unity@altimit.systems">unity@altimit.systems</a></li>
+        <li>Licensed under the MIT License, allowing free use and distribution with attribution.</li>
+    </ul>
+</body>
+</html>
