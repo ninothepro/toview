@@ -1,0 +1,18 @@
+UIView3D is a software library for mobile devices that allows native mobile UI content to be used within a 3D engine, supporting interactivity and smooth scrolling. It is compatible with Virtual Reality (VR) and Augmented Reality (AR), including Google Daydream View and Samsung Gear VR.
+
+### Unity Plugin
+- **Android Example**: Demonstrates displaying a basic web browser within Unity using a 3D plane and UIView3D renderer.
+- **Creating UIView Android Providers**: Custom providers are created by extending the `UIView3DRenderer.AndroidViewProvider` class and overriding `GetNativeObject()` and `DispatchMotionEvent()`.
+  - `GetNativeObject()`: Returns a native handle to an Android View.
+  - `DispatchMotionEvent()`: Forwards Unity touch events to the Android View.
+- **Creating Input Drivers**: Custom input systems, such as for Google Daydream View Controller, forward touch inputs to Android Views using `DispatchMotionEvent`.
+
+### Current Limitations
+- Hardware acceleration is not available in WebView, affecting video and WebGL content.
+- Android Views are drawn on a single thread, which may require adjusting rendering tiles and update rates.
+- Vulkan support is not available but may be implemented in the future.
+
+### Contact and License
+- Website: [altimit.systems/uiview3d](https://altimit.systems/uiview3d)
+- Email: unity@altimit.systems
+- Licensed under the MIT License, allowing free use and distribution with attribution.
